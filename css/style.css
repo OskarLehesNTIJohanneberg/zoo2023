@@ -38,7 +38,30 @@ body {
 
     grid-area: n1;
     background-color: beige;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'link1'
+    'link2'
+    ;
 
+
+}
+
+#link1 {
+
+grid-area: link1;
+background-color: red;
+
+}
+
+#link2 {
+
+    grid-area: link2;
+    background-color: red;
+    
 }
 
 #div1 {
