@@ -14,24 +14,43 @@
 
 <body>
 
-    <div id="container1">
+    <section class="header" id="header1">
 
-        <header id="header1">Monkey Munch</header>
-        <nav id="nav1">
+        <h1>Monkey Munch Restaurant  |  Instagram: @MonkeyMunchers</h1>
 
-            <section id="link1"></section>
-            <section id="link2"></section>
+    </section>
+  
+    <section class="main_content" id="start_page">
 
+        <div id="zoo"></div>
+        <div id="om_oss"></div>
+        <div id=""></div>
+        <div></div>
+        <div></div>
+        <div></div>
 
-        </nav>
-        <div id="div1">
+    </section>
 
-            <img src="img/animals/zoo picture.jpg" alt="Picture of the zoo">
+    <script>
 
-        </div>
-        <div id="div2"></div>
+        window.onscroll = function() {myFunction()};
 
-    </div>
+        var header = document.getElementById("header1");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+
+            if (window.pageYOffset > sticky) 
+            {
+                header.classList.add("sticky");
+            } 
+            else 
+            {
+                header.classList.remove("sticky");
+            }
+        }
+
+    </script>
     
 </body>
 

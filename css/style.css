@@ -1,79 +1,40 @@
 body {
+    margin: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  
+  .header {
+    padding: 10px 16px;
+    background: rgb(190, 190, 190);
+    font-size: x-large;
+    text-align: 100px;
+  }
+  
+  .main_content {
+    padding: 16px;
+    background-color: lightslategray;
+  }
 
-    background-color: lightgray;
-    font-family: 'Times New Roman', Times, serif;
-
-}
-
-#container1 {
+  #start_page {
 
     display: grid;
-    height: 100vh;
-    grid-template-columns: 40% 1fr;
-    grid-template-rows: 10% 1fr 1fr;
-    grid-gap: 10px;
+    height: 120vh;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(3);
     grid-template-areas: 
-        'h1 h1'
-        'd1 n1'
-        'd1 d2'
+    'Zoo Empty'
+    'Empty Menu'
+    'OmOss Empty'
     ;
 
-}
+  }
 
-#header1 {
-
-    display: grid;
-    grid-area: h1;
-    background-color: darkgray;
-    margin-top: -5px;
-    margin-left: -5px;
-    margin-right: -5px;
-    justify-items: center;
-    align-items: center;
-    font-size: xx-large;
-
-}
-
-#nav1 {
-
-    grid-area: n1;
-    background-color: beige;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-gap: 10px;
-    grid-template-areas: 
-    'link1'
-    'link2'
-    ;
-
-
-}
-
-#link1 {
-
-grid-area: link1;
-background-color: red;
-
-}
-
-#link2 {
-
-    grid-area: link2;
-    background-color: red;
-    
-}
-
-#div1 {
-
-    grid-area: d1;
-    background-color: darkslategrey;
-
-}
-
-#div2 {
-
-    grid-area: d2;
-    background-color: darkslateblue;
-
-}
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .sticky + .main_content {
+    padding-top: 170px;
+  }
