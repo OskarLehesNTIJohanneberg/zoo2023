@@ -41,7 +41,7 @@ body {
     grid-gap: 10px;
     grid-template-areas: 
     'zoo apa1'
-    'apa2 meny'
+    'apa2 merinfo'
     'reviews apa3';
   }
 
@@ -80,8 +80,8 @@ body {
         margin-left: -16px;
     }
 
-    #meny {
-        grid-area: meny;
+    #merinfo {
+        grid-area: merinfo;
         border-top-left-radius: 5rem;
         border-bottom-left-radius: 5rem;
         margin-right: -16px;
@@ -104,7 +104,7 @@ body {
 
       .review {
 
-        background-color: azure;
+        background-color: #30d77e;
         display: grid;
         grid-template-columns: 10% 10% 10% 10% 10% 50%;
         grid-template-rows: 100%;
@@ -248,13 +248,17 @@ body {
         }
 
   .sticky {
+
     position: fixed;
     top: 0;
     width: 100%;
+
   }
   
   .sticky + .main_content {
+
     padding-top: 16px;
+
   }
 
 /* ^^ Page 1 Index ^^ */
@@ -269,21 +273,34 @@ body {
 
   }
 
+  #vad_vi_står_för {
+
+    grid-area: values;
+
+  }
+
   #om_oss {
+
     display: grid;
     height: 100vh;
     grid-template-columns: 75% 25%;
-    grid-template-rows: 100%;
+    grid-template-rows: 10% 90%;
     grid-gap: 10px;
+    grid-template-areas: 
+    'hidden hidden'
+    'personal values'
+
   }
 
   #personal {
 
+    grid-area: personal;
     display: grid;
-    grid-template-columns: 1/3 1/3 1/3;
-    grid-template-rows: 50% 50%;
+    grid-template-columns: repeat(3);
+    grid-template-rows: 10% 45% 45%;
     grid-gap: 5px;
     grid-template-areas: 
+    'our_personal our_personal our_personal'
     'p1 p2 p3'
     'p4 p5 p6'
 
@@ -291,8 +308,13 @@ body {
 
     .personal {
 
-      background-image: url(/img/animals/Alfred.jpg);
       border-radius: 5rem;
+
+    }
+
+    #our_personal {
+
+      grid-area: our_personal;
 
     }
 
@@ -302,6 +324,10 @@ body {
       margin-left: 3rem;
       margin-right: 0.5rem;
       margin-bottom: 0.5rem;
+      background-image: url('/img/animals/AlfredBror.png');
+      background-position-x: 40%;
+      background-position-y: 25%;
+      background-size: 100%;
 
     }
 
@@ -311,6 +337,8 @@ body {
       margin-left: 0.5rem;
       margin-right: 0.5rem;
       margin-bottom: 0.5rem;
+      background-image: url('/img/animals/Alfred.jpg');
+      background-position-y: 35%;
 
     }
 
@@ -320,6 +348,10 @@ body {
       margin-left: 0.5rem;
       margin-right: 3rem;
       margin-bottom: 0.5rem;
+      background-image: url('/img/animals/Monkey3.jpg');
+      background-position-x: 40%;
+      background-position-y: 40%;
+      background-size: 160%;
 
     }
 
@@ -329,6 +361,9 @@ body {
       margin-left: 3rem;
       margin-right: 0.5rem;
       margin-bottom: 3rem;
+      background-image: url('/img/animals/Monkey4.jpg');
+      background-position-x: 40%;
+      background-size: 100%;
 
     }
 
@@ -338,6 +373,9 @@ body {
       margin-left: 0.5rem;
       margin-right: 0.5rem;
       margin-bottom: 3rem;
+      background-image: url('/img/animals/monkey5.jpg');
+      background-position-x: 64%;
+      background-size: 100%;
 
     }
 
@@ -347,5 +385,31 @@ body {
       margin-left: 0.5rem;
       margin-right: 3rem;
       margin-bottom: 3rem;
+      background-image: url('/img/animals/monkey6.jpg');
+      background-size: 110%;
+      background-position-x: 0%;
+
+    }
+
+    /* Om Oss Sidan^^ */
+
+
+    #meny {
+
+      display: flex;
+      flex-wrap: ;
+      justify-content: center;
+      height: 100vh;
+      background-color: black;
+      gap: 2%;
+
+    }
+
+    .mat {
+
+      width: 20%;
+      height: 30%;
+      background-color: greenyellow; 
+      margin-top: 20%;
 
     }
