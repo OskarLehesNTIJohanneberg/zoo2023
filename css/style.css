@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Rubik+Vinyl&display=swap');
+
 body {
     margin: 0;
     width: 100%;
-  }
+    font-family: 'Poiret One', cursive;
+}
   
   .header {
     padding: 10px 16px;
@@ -10,6 +13,8 @@ body {
     width: 100%;
     background-color: rgb(8, 188, 50);  
     position: fixed;
+    font-family: 'Rubik Vinyl', cursive;
+    color: black;
   }
 
   p {
@@ -29,7 +34,7 @@ body {
   
   .main_content {
     padding: 16px;
-    padding-bottom: 24px;
+    padding-bottom: 36px;
     background-image: url('/img/place/JungleTest2.0.png');
   }
 
@@ -407,9 +412,104 @@ body {
 
     .mat {
 
-      width: 20%;
-      height: 30%;
+      width: 25%;
+      height: 35%;
       background-color: greenyellow; 
       margin-top: 20%;
+      border-radius: 50px;
+
+    }
+
+    #mat1 {
+
+      display: grid;
+      grid-template-rows: 80% 20%;
+      grid-template-areas: 
+      'matbild1'
+      'matpris1'
+      ;
+
+    }
+
+      #matbild1 {
+
+        grid-area: matbild1;
+        height: 90%;
+        width: 80%;
+        margin: 5%;
+        margin-left: 10%;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+
+      }
+
+      #matpris1 {
+
+        grid-area: matpris1;
+        font: x-large;
+
+      }
+
+    #mat2 {
+
+      display: grid;
+      grid-template-rows: 85% 15%;
+      grid-template-areas: 
+      'matbild2'
+      'matpris2'
+      ;
+
+    }
+
+      #matbild2 {
+
+        grid-area: matbild2;
+        height: 85%;
+        width: 80%;
+        margin: 5%;
+        margin-left: 10%;
+        margin-bottom: 0%;
+        border-top-right-radius: 50px;
+        border-top-left-radius: 50px;
+
+      }
+
+      #matpris2 {
+
+        grid-area: matpris2;
+        font: x-large;
+        margin-top: -5%
+
+      }
+
+    #mat3 {
+
+      display: grid;
+      grid-template-rows: 85% 15%;
+      grid-template-areas: 
+      'matbild3'
+      'matpris3'
+      ;
+
+    }
+
+    #matbild3 {
+
+      grid-area: matbild3;
+      height: 85%;
+      width: 80%;
+      margin: 5%;
+      margin-left: 10%;
+      margin-bottom: 0%;
+      border-top-right-radius: 50px;
+      border-top-left-radius: 50px;
+
+    }
+
+    #matpris3 {
+
+      grid-area: matpris3;
+      font: x-large;
+      margin-top: -5%;
 
     }
