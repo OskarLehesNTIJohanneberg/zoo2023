@@ -301,7 +301,7 @@ body {
 
     grid-area: personal;
     display: grid;
-    grid-template-columns: repeat(3);
+    grid-template-columns: repeat(3, 33%);
     grid-template-rows: 10% 45% 45%;
     grid-gap: 5px;
     grid-template-areas: 
@@ -344,6 +344,8 @@ body {
       margin-bottom: 0.5rem;
       background-image: url('/img/animals/Alfred.jpg');
       background-position-y: 35%;
+      background-position-x: 80%;
+      background-size: 100%;
 
     }
 
@@ -356,7 +358,7 @@ body {
       background-image: url('/img/animals/Monkey3.jpg');
       background-position-x: 40%;
       background-position-y: 40%;
-      background-size: 160%;
+      background-size: 165%;
 
     }
 
@@ -402,7 +404,6 @@ body {
     #meny {
 
       display: flex;
-      flex-wrap: ;
       justify-content: center;
       height: 100vh;
       background-color: black;
@@ -414,7 +415,7 @@ body {
 
       width: 25%;
       height: 35%;
-      background-color: greenyellow; 
+      background-color: #30d77e; 
       margin-top: 20%;
       border-radius: 50px;
 
